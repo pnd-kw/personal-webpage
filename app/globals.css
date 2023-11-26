@@ -16,9 +16,9 @@
   }
 } */
 
-body {
-  background-image: url('/images/background-img.svg');
-  background-size: cover;
+/* body { */
+  /* background-image: url('/images/background-img.svg');
+  background-size: cover; */
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -26,4 +26,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-}
+/* }  */
