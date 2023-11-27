@@ -66,9 +66,14 @@ export default function Home() {
                       </Button>
                     </Link>
                   </div>
-                  <Button size="large" color="white" textColor="text-sky">
-                    RESUME
-                  </Button>
+                  <a
+                    href="https://drive.google.com/u/0/uc?id=1yeNp4PAl0efSLCs42W8hIoObdyDpAgA-&export=download"
+                    download="Resume-Krisna-Pandu.pdf"
+                  >
+                    <Button size="large" color="white" textColor="text-sky">
+                      RESUME
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
