@@ -6,7 +6,7 @@ const NavBar: React.FC = () => {
     <header className="h-14 w-full bg-white sticky top-0 z-50 shadow-lg">
       <div className="flex items-center">
         <div className="pl-20 py-2">
-          <Link href="/#home">
+          <Link href="#home">
             <div className="w-8 h-8 rounded-full bg-sky-700 flex justify-center items-center">
               <p className="font-bold text-white text-xs">KW</p>
             </div>

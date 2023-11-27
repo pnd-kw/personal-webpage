@@ -76,7 +76,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center justify-center pb-12">
                   <div className="pr-8">
-                    <Link href="/#works">
+                    <Link href="#works">
                       <Button size="large" color="sky" textColor="text-white">
                         WORKS
                       </Button>
