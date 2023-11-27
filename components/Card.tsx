@@ -1,4 +1,4 @@
-import { getImagePath } from '@/utils/basePathHelper';
+// import { getImagePath } from '@/utils/basePathHelper';
 import Image from 'next/image';
 
 type Props = {
@@ -16,7 +16,7 @@ const Card: React.FC<Props> = ({
   techLogo,
   url,
 }) => {
-  const googlePlay = getImagePath('google-play-logo.svg');
+  // const googlePlay = getImagePath('google-play-logo.svg');
 
   return (
     <div className="bg-white rounded-xl shadow-md p-4 mb-4">
@@ -48,7 +48,7 @@ const Card: React.FC<Props> = ({
       <div className="flex items-end justify-items-end">
         <div className="ml-auto">
           <a href={url} target="_blank" rel="noopener noreferrer">
-            <Image className="w-36" src={googlePlay} alt="google play logo" width={150} height={50} />
+            <Image className="w-36" src="/images/google-play-logo.svg" alt="google play logo" width={150} height={50} />
           </a>
         </div>
       </div>

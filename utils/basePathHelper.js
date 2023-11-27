@@ -6,3 +6,4 @@ const basePath = publicRuntimeConfig.basePath || '';
 export function getImagePath(imageName) {
     return `${basePath}/images/${imageName}`;
 }
+
