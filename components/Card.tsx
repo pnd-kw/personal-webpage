@@ -20,7 +20,7 @@ const Card: React.FC<Props> = ({
       <div className="w-full md:w-5/6 flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center min-h-full ">
           <div className="flex items-center justify-center">
-            <Image className="h-full object-cover" src={image} alt={title} />
+            <Image className="h-full object-cover" src={image} alt={title} width={200} height={200} />
           </div>
           <div>
             <div className="pb-2">
@@ -34,6 +34,8 @@ const Card: React.FC<Props> = ({
                   key={index}
                   src={logo}
                   alt={`Tech Logo ${index}`}
+                  width={30}
+                  height={30}
                 />
               ))}
             </div>
@@ -43,7 +45,7 @@ const Card: React.FC<Props> = ({
       <div className="flex items-end justify-items-end">
         <div className="ml-auto">
           <a href={url} target="_blank" rel="noopener noreferrer">
-            <Image className="w-36" src="/images/google-play-logo.svg" alt="google play logo" />
+            <Image className="w-36" src="/images/google-play-logo.svg" alt="google play logo" width={150} height={50} />
           </a>
         </div>
       </div>

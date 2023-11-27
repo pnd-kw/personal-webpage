@@ -42,12 +42,14 @@ export default function Home() {
                   className="object-cover w-full md:w-auto md:max-w-lg mx-auto"
                   src="/images/rocket.svg"
                   alt="Landing page image"
+                  width={600}
+                  height={600}
                 />
               </div>
               <div>
                 <div className="pb-12">
                   <p className="flex justify-center font-bold text-3xl">
-                    (&quot;)
+                    &quot;
                     <span className="font-bold text-3xl">
                       Crafting Digital Experiences:
                     </span>
@@ -55,7 +57,7 @@ export default function Home() {
                   <p className="flex justify-center font-bold text-4xl">
                     Your Go-To<span className="ml-2"></span>
                     <span className="font-bold text-sky-700 text-4xl">
-                      Flutter Developer(&quot;)
+                      Flutter Developer&quot;
                     </span>
                   </p>
                 </div>
@@ -91,20 +93,20 @@ export default function Home() {
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center min-h-full">
             <div className="flex items-center justify-center">
-              <Image src="/images/profile-photo.svg" alt="profile image" />
+              <Image src="/images/profile-photo.svg" alt="profile image" width={400} height={400} />
             </div>
             <div className="pb-12">
               <p>
                 Hello! My name is{" "}
-                <span className="font-bold text-sky-700">Krisna</span>, i(&apos;)m a
+                <span className="font-bold text-sky-700">Krisna</span>, i&apos;m a
                 passionate Flutter Developer with a knack for crafting
                 captivating mobile applications. My journey in coding began with
                 a fascination for creating seamless user experiences. Proficient
-                in Dart and adept at leveraging Flutter(&apos;)s versatility, I thrive
+                in Dart and adept at leveraging Flutter&apos;s versatility, I thrive
                 on turning ideas into polished, functional, and aesthetically
                 pleasing apps. My focus lies in building scalable solutions and
                 embracing innovative approaches to ensure delightful user
-                interactions. Let(&apos;)s create something remarkable together in the
+                interactions. Let&apos;s create something remarkable together in the
                 world of mobile development!
               </p>
             </div>
