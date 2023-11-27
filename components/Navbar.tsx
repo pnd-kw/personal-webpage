@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 const NavBar: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const NavBar: React.FC = () => {
           <a target="_blank" href="https://github.com/pnd-kw" rel="noopener noreferrer">
             <button>
               <div className="w-10 h-10 rounded-full flex justify-center items-center">
-                <img src="/images/logo-github.svg" />
+                <Image src="/images/logo-github.svg" alt="github logo" />
               </div>
             </button>
           </a>
@@ -26,7 +27,7 @@ const NavBar: React.FC = () => {
           <a target="_blank" href="https://www.linkedin.com/in/krisna-pandu-513774254/" rel="noopener noreferrer">
             <button>
               <div className="w-10 h-10 rounded-full flex justify-center items-center">
-                <img src="/images/logo-linkedin.svg" />
+                <Image src="/images/logo-linkedin.svg" alt="linkedin logo" />
               </div>
             </button>
           </a>
