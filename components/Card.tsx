@@ -48,7 +48,7 @@ const Card: React.FC<Props> = ({
       <div className="flex items-end justify-items-end">
         <div className="ml-auto">
           <a href={url} target="_blank" rel="noopener noreferrer">
-            <Image className="w-36" src="/images/google-play-logo.svg" alt="google play logo" width={150} height={50} />
+            <Image className="w-36" src="images/google-play-logo.svg" alt="google play logo" width={150} height={50} />
           </a>
         </div>
       </div>
