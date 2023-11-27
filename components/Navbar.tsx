@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
           >
             <div className="w-10 h-10 rounded-full flex justify-center items-center">
               <Image
-                src="/images/logo-github.svg"
+                src="images/logo-github.svg"
                 alt="github logo"
                 width={30}
                 height={30}
@@ -36,7 +36,7 @@ const NavBar: React.FC = () => {
           >
             <div className="w-10 h-10 rounded-full flex justify-center items-center">
               <Image
-                src="/images/logo-linkedin.svg"
+                src="images/logo-linkedin.svg"
                 alt="linkedin logo"
                 width={30}
                 height={30}

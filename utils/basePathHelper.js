@@ -1,9 +1,9 @@
-import getConfig from 'next/config';
+// import getConfig from 'next/config';
 
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig.basePath || '';
+// const { publicRuntimeConfig } = getConfig();
+// const basePath = publicRuntimeConfig.basePath || '';
 
-export function getImagePath(imageName) {
-    return `${basePath}/images/${imageName}`;
-}
+// export function getImagePath(imageName) {
+//     return `${basePath}/images/${imageName}`;
+// }
 
