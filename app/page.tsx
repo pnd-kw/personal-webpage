@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import Card from "@/components/Card";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   const cardsData = [
@@ -28,7 +29,10 @@ export default function Home() {
     <div className="relative h-screen overflow-y-scroll">
       <Navbar />
 
-      <div className="w-full h-[90vh] flex justify-center overflow-hidden bg-slate-50">
+      <div
+        id="home"
+        className="w-full h-[90vh] flex justify-center overflow-hidden bg-slate-50"
+      >
         <div className="w-full h-full flex flex-col items-center justify-center">
           <div className="w-full md:w-2/3 flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center min-h-full">
@@ -41,25 +45,26 @@ export default function Home() {
               </div>
               <div>
                 <div className="pb-12">
-                  <p className="font-bold text-3xl">
+                  <p className="flex justify-center font-bold text-3xl">
                     "
                     <span className="font-bold text-3xl">
                       Crafting Digital Experiences:
                     </span>
                   </p>
-                  <p className="font-bold text-4xl pr-2">
-                    Your Go-To{" "}
+                  <p className="flex justify-center font-bold text-4xl">
+                    Your Go-To<span className="ml-2"></span>
                     <span className="font-bold text-sky-700 text-4xl">
                       Flutter Developer"
                     </span>
                   </p>
                 </div>
-
-                <div className="flex items-center pb-12">
+                <div className="flex items-center justify-center pb-12">
                   <div className="pr-8">
-                    <Button size="large" color="sky" textColor="text-white">
-                      WORKS
-                    </Button>
+                    <Link href="/#works">
+                      <Button size="large" color="sky" textColor="text-white">
+                        WORKS
+                      </Button>
+                    </Link>
                   </div>
                   <Button size="large" color="white" textColor="text-sky">
                     RESUME
@@ -70,13 +75,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full h-full flex flex-col items-center justify-center ">
+      <div
+        id="about"
+        className="w-full h-full flex flex-col items-center justify-center "
+      >
         <div className="pb-12">
           <p className="font-bold text-4xl">ABOUT ME</p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center min-h-full">
-            <div>
+            <div className="flex items-center justify-center">
               <img src="/images/profile-photo.svg" alt="profile image" />
             </div>
             <div className="pb-12">
@@ -97,24 +105,25 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full h-full flex flex-col items-center justify-center ">
+      <div
+        id="works"
+        className="w-full h-full flex flex-col items-center justify-center pb-20"
+      >
         <div className="pb-12">
           <p className="font-bold text-4xl">WORKS</p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-2 items-center min-h-full">
-            <div>
-              {cardsData.map((item) => (
-                <Card
-                  key={item.id}
-                  title={item.title}
-                  image={item.image}
-                  description={item.description}
-                  techLogo={item.techLogo}
-                  url={item.url}
-                />
-              ))}
-            </div>
+          <div>
+            {cardsData.map((item) => (
+              <Card
+                key={item.id}
+                title={item.title}
+                image={item.image}
+                description={item.description}
+                techLogo={item.techLogo}
+                url={item.url}
+              />
+            ))}
           </div>
         </div>
       </div>
