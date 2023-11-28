@@ -92,7 +92,7 @@ export default function Home() {
       </div>
       <div
         id="about"
-        className="w-full h-full flex flex-col items-center justify-center pb-20"
+        className="w-full h-full flex flex-col items-center justify-center pb-24"
       >
         <div className="pb-12">
           <p className="font-bold text-4xl">ABOUT ME</p>
@@ -128,7 +128,7 @@ export default function Home() {
       </div>
       <div
         id="works"
-        className="w-full h-full flex flex-col items-center justify-center pb-20"
+        className="w-full h-full flex flex-col items-center justify-center pb-24"
       >
         <div className="pb-12">
           <p className="font-bold text-4xl">WORKS</p>
@@ -148,6 +148,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="pb-12" />
       <Footer />
     </div>
   );
