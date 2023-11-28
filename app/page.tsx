@@ -89,12 +89,12 @@ export default function Home() {
       </div>
       <div
         id="about"
-        className="w-full h-full flex flex-col items-center justify-center pb-20"
+        className="w-full h-full flex flex-col items-center justify-center pb-20 bg-sky-200"
       >
         <div className="pb-12">
           <p className="font-bold text-4xl">ABOUT ME</p>
         </div>
-        <div className="w-full md:w-full flex justify-center">
+        <div className="w-full md:w-1/2 flex justify-center bg-blue-900">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center min-h-full">
             <div className="flex items-center justify-center">
               <Image
@@ -105,7 +105,7 @@ export default function Home() {
                 height={400}
               />
             </div>
-            <div className="pb-12">
+            <div className="pb-12 bg-blue-500">
               <p>
                 Hello! My name is{" "}
                 <span className="font-bold text-sky-700">Krisna</span>, i&apos;m
