@@ -7,6 +7,7 @@ import Image from "next/image";
 import Head from "next/head";
 
 export default function Home() {
+ 
   const cardsData = [
     {
       id: 0,
@@ -35,14 +36,14 @@ export default function Home() {
       <Navbar />
       <div
         id="home"
-        className="w-full h-[100vh] flex justify-center overflow-hidden bg-slate-50"
+        className="w-full h-[90vh] flex justify-center overflow-hidden bg-slate-50"
       >
         <div className="w-full h-full flex flex-col items-center justify-center">
           <div className="w-full md:w-2/3 flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center min-h-full">
               <div className="text-center md:text-left">
                 <Image
-                  className="object-cover w-full md:w-auto md:max-w-lg mx-auto"
+                  className="object-cover w-full h-full md:w-auto md:max-w-lg mx-auto"
                   src="images/rocket.svg"
                   alt="Landing page image"
                   width={600}
@@ -88,7 +89,7 @@ export default function Home() {
       </div>
       <div
         id="about"
-        className="w-full h-[100vh] flex flex-col items-center justify-center "
+        className="w-full h-full flex flex-col items-center justify-center pb-20"
       >
         <div className="pb-12">
           <p className="font-bold text-4xl">ABOUT ME</p>
@@ -97,6 +98,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center min-h-full">
             <div className="flex items-center justify-center">
               <Image
+              className="object-cover w-full h-full md:w-auto md:max-w-lg mx-auto"
                 src="images/profile-photo.svg"
                 alt="profile image"
                 width={400}
@@ -123,7 +125,7 @@ export default function Home() {
       </div>
       <div
         id="works"
-        className="w-full h-[100vh] flex flex-col items-center justify-center"
+        className="w-full h-full flex flex-col items-center justify-center pb-20"
       >
         <div className="pb-12">
           <p className="font-bold text-4xl">WORKS</p>
