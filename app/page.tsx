@@ -96,9 +96,9 @@ export default function Home() {
         </div>
         <div className="w-full md:w-1/2 flex justify-center bg-blue-900">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center min-h-full">
-            <div className="flex items-center justify-center">
+            <div className="h-[20vh] sm:h-full flex items-center justify-center">
               <Image
-              className="object-cover w-full h-full md:w-auto md:max-w-lg mx-auto"
+              className="object-cover w-[25vh] md:w-auto md:max-w-lg mx-auto"
                 src="images/profile-photo.svg"
                 alt="profile image"
                 width={400}
