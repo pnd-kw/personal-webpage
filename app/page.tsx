@@ -7,7 +7,6 @@ import Image from "next/image";
 import Head from "next/head";
 
 export default function Home() {
- 
   const cardsData = [
     {
       id: 0,
@@ -41,9 +40,9 @@ export default function Home() {
         <div className="w-full h-full flex flex-col items-center justify-center">
           <div className="w-full md:w-2/3 flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center min-h-full">
-              <div className="text-center md:text-left">
+              <div className="flex items-center justify-center">
                 <Image
-                  className="object-cover w-full h-full md:w-auto md:max-w-lg mx-auto"
+                  className="object-cover w-[25vh] md:w-auto md:max-w-lg mx-auto"
                   src="images/rocket.svg"
                   alt="Landing page image"
                   width={600}
@@ -52,20 +51,24 @@ export default function Home() {
               </div>
               <div>
                 <div className="pb-12">
-                  <p className="font-bold text-3xl">
-                    &quot;
-                    <span className="font-bold text-3xl">
-                      Crafting Digital Experiences:
-                    </span>
-                  </p>
-                  <p className="font-bold text-4xl">
-                    Your Go-To<span className="ml-2"></span>
-                    <span className="font-bold text-sky-700 text-4xl">
-                      Flutter Developer&quot;
-                    </span>
-                  </p>
+                  <div className="flex items-center justify-center">
+                    <p className="font-bold text-3xl">
+                      &quot;
+                      <span className="font-bold text-3xl">
+                        Crafting Digital Experiences:
+                      </span>
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <p className="font-bold text-3xl">
+                      Your Go-To<span className="ml-2"></span>
+                      <span className="font-bold text-sky-700 text-3xl">
+                        Flutter Developer&quot;
+                      </span>
+                    </p>
+                  </div>
                 </div>
-                <div className="flex items-center pb-12">
+                <div className="flex items-center justify-center pb-12">
                   <div className="pr-8">
                     <Link href="#works">
                       <Button size="large" color="sky" textColor="text-white">
@@ -89,23 +92,23 @@ export default function Home() {
       </div>
       <div
         id="about"
-        className="w-full h-full flex flex-col items-center justify-center pb-20 bg-sky-200"
+        className="w-full h-full flex flex-col items-center justify-center pb-20"
       >
         <div className="pb-12">
           <p className="font-bold text-4xl">ABOUT ME</p>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center bg-blue-900">
+        <div className="w-full md:w-1/2 flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center min-h-full">
-            <div className="h-[20vh] sm:h-full flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <Image
-              className="object-cover w-[25vh] md:w-auto md:max-w-lg mx-auto"
+                className="object-cover w-[25vh] md:w-auto md:max-w-lg mx-auto"
                 src="images/profile-photo.svg"
                 alt="profile image"
                 width={400}
                 height={400}
               />
             </div>
-            <div className="pb-12 bg-blue-500">
+            <div className="pb-12">
               <p>
                 Hello! My name is{" "}
                 <span className="font-bold text-sky-700">Krisna</span>, i&apos;m

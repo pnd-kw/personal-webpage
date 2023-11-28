@@ -21,7 +21,7 @@ const Card: React.FC<Props> = ({
       <div className="w-full md:w-5/6 flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center min-h-full ">
           <div className="flex items-center justify-center">
-            <Image className="h-full object-cover" src={image} alt={title} width={200} height={200} />
+            <Image className="object-cover w-[15vh] md:w-auto md:max-w-lg mx-auto" src={image} alt={title} width={200} height={200} />
           </div>
           <div>
             <div className="pb-2">
