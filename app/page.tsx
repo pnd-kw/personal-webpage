@@ -52,17 +52,17 @@ export default function Home() {
               <div>
                 <div className="pb-12">
                   <div className="flex items-center justify-center">
-                    <p className="font-bold text-3xl">
+                    <p className="font-bold text-xl md:text-3xl">
                       &quot;
-                      <span className="font-bold text-3xl">
+                      <span className="font-bold text-xl md:text-3xl">
                         Crafting Digital Experiences:
                       </span>
                     </p>
                   </div>
                   <div className="flex items-center justify-center">
-                    <p className="font-bold text-3xl">
+                    <p className="font-bold text-2xl md:text-4xl">
                       Your Go-To<span className="ml-2"></span>
-                      <span className="font-bold text-sky-700 text-3xl">
+                      <span className="font-bold text-sky-700 text-2xl md:text-4xl">
                         Flutter Developer&quot;
                       </span>
                     </p>
@@ -108,7 +108,7 @@ export default function Home() {
                 height={400}
               />
             </div>
-            <div className="pb-12">
+            <div>
               <p>
                 Hello! My name is{" "}
                 <span className="font-bold text-sky-700">Krisna</span>, i&apos;m
