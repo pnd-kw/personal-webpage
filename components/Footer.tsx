@@ -1,11 +1,6 @@
-// import { getImagePath } from '@/utils/basePathHelper';
 import Image from 'next/image';
 
 const Footer: React.FC = () => {
-  // const bloc = getImagePath('bloc-logo.svg');
-  // const riverpod = getImagePath('riverpod-logo.svg');
-  // const firebase = getImagePath('firebase-logo.svg');
-
   return (
     <div className="sticky bottom-0 z-40 w-full py-4 h-1/10 bg-white">
       <footer className="flex items-center justify-center space-x-2">

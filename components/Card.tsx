@@ -1,4 +1,3 @@
-// import { getImagePath } from '@/utils/basePathHelper';
 import Image from 'next/image';
 
 type Props = {
@@ -16,7 +15,6 @@ const Card: React.FC<Props> = ({
   techLogo,
   url,
 }) => {
-  // const googlePlay = getImagePath('google-play-logo.svg');
 
   return (
     <div className="bg-white rounded-xl shadow-md p-4 mb-4">

@@ -32,15 +32,15 @@ export default function Home() {
   ];
 
   return (
-    // <div>
-    //   <Head>
-    //     <link
-    //       rel="icon"
-    //       href="static/my-icon.svg"
-    //       type="image/svg"
-    //       sizes="32x32"
-    //     />
-    //   </Head>
+    <div>
+      <Head>
+        <link
+          rel="icon"
+          href="static/my-icon.svg"
+          type="image/svg"
+          sizes="32x32"
+        />
+      </Head>
       <div className="relative h-screen overflow-y-scroll">
         <Navbar />
         <div
@@ -156,6 +156,6 @@ export default function Home() {
         </div>
         <Footer />
       </div>
-    // </div>
+    </div>
   );
 }
