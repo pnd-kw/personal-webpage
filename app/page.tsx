@@ -94,7 +94,7 @@ export default function Home() {
         <div className="pb-12">
           <p className="font-bold text-4xl">ABOUT ME</p>
         </div>
-        <div className="w-full md:w-2/3 flex justify-center">
+        <div className="w-full md:w-full flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center min-h-full">
             <div className="flex items-center justify-center">
               <Image
@@ -130,8 +130,8 @@ export default function Home() {
         <div className="pb-12">
           <p className="font-bold text-4xl">WORKS</p>
         </div>
-        <div className="w-full md:w-2/3 flex justify-center">
-          <div className="w-full md:w-3/4">
+        <div className="w-full md:w-1/2 flex justify-center">
+          <div>
             {cardsData.map((item) => (
               <Card
                 key={item.id}
