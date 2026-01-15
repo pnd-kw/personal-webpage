@@ -47,7 +47,7 @@ const QueueDisplaySection = ({ project }: Props) => {
           </div>
         </div>
         <div className="flex w-full items-start justify-center p-2">
-          <div>
+          <div className="w-full">
             {videos.map((video) => (
               <div key={video.src} className="shadow-lg">
                 <VideoPlayer src={video.src} />

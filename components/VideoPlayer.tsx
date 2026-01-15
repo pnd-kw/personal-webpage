@@ -14,7 +14,7 @@ const VideoPlayer = ({
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="relative w-full max-w-3xl aspect-video bg-black shadow-lg rounded-lg overflow-hidden">
+    <div className="relative w-full aspect-video bg-black shadow-lg rounded-lg overflow-hidden">
       {!loaded && (
         <div className="absolute inset-0 flex w-full h-full items-center justify-center bg-black">
           <div className="h-12 w-12 rounded-full border-4 border-white/30 border-t-white animate-spin" />
