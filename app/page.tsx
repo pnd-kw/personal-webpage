@@ -57,7 +57,7 @@ export default function Home() {
 
                 <div className="flex flex-col md:flex md:flex-row w-full gap-4 items-center">
                   <Image
-                    src="/images/profile.png"
+                    src="images/profile.png"
                     alt="profile image"
                     width={120}
                     height={120}
