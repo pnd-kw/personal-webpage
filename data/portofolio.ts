@@ -25,55 +25,55 @@ export const portofolio: Portofolio[] = [
 
     techStack: [
       {
-        src: "/images/javascript.svg",
+        src: "images/javascript.svg",
         alt: "javascript",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/react-original.svg",
+        src: "images/react-original.svg",
         alt: "react",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/nextjs-original.svg",
+        src: "images/nextjs-original.svg",
         alt: "next",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/tailwindcss-icon.svg",
+        src: "images/tailwindcss-icon.svg",
         alt: "tailwindcss",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/shadcnui-dark.svg",
+        src: "images/shadcnui-dark.svg",
         alt: "shadcnui",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/zustand-original.svg",
+        src: "images/zustand-original.svg",
         alt: "zustand",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/react-query-icon.svg",
+        src: "images/react-query-icon.svg",
         alt: "react-query",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/reacthookform-dark.svg",
+        src: "images/reacthookform-dark.svg",
         alt: "react-hook-form",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/zod.svg",
+        src: "images/zod.svg",
         alt: "zod",
         width: 20,
         height: 20,
@@ -110,55 +110,55 @@ export const portofolio: Portofolio[] = [
 
     techStack: [
       {
-        src: "/images/javascript.svg",
+        src: "images/javascript.svg",
         alt: "javascript",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/react-original.svg",
+        src: "images/react-original.svg",
         alt: "react",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/nextjs-original.svg",
+        src: "images/nextjs-original.svg",
         alt: "next",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/tailwindcss-icon.svg",
+        src: "images/tailwindcss-icon.svg",
         alt: "tailwindcss",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/shadcnui-dark.svg",
+        src: "images/shadcnui-dark.svg",
         alt: "shadcnui",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/zustand-original.svg",
+        src: "images/zustand-original.svg",
         alt: "zustand",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/react-query-icon.svg",
+        src: "images/react-query-icon.svg",
         alt: "react-query",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/reacthookform-dark.svg",
+        src: "images/reacthookform-dark.svg",
         alt: "react-hook-form",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/zod.svg",
+        src: "images/zod.svg",
         alt: "zod",
         width: 20,
         height: 20,
@@ -168,7 +168,7 @@ export const portofolio: Portofolio[] = [
     media: [
       {
         type: "image",
-        src: "/images/sc-erm1.PNG",
+        src: "images/sc-erm1.PNG",
         alt: "screenshot erm 1",
       },
     ],
@@ -198,55 +198,55 @@ export const portofolio: Portofolio[] = [
 
     techStack: [
       {
-        src: "/images/javascript.svg",
+        src: "images/javascript.svg",
         alt: "javascript",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/react-original.svg",
+        src: "images/react-original.svg",
         alt: "react",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/vitejs-original.svg",
+        src: "images/vitejs-original.svg",
         alt: "vite",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/tailwindcss-icon.svg",
+        src: "images/tailwindcss-icon.svg",
         alt: "tailwindcss",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/shadcnui-dark.svg",
+        src: "images/shadcnui-dark.svg",
         alt: "shadcnui",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/zustand-original.svg",
+        src: "images/zustand-original.svg",
         alt: "zustand",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/reacthookform-dark.svg",
+        src: "images/reacthookform-dark.svg",
         alt: "react-hook-form",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/zod.svg",
+        src: "images/zod.svg",
         alt: "zod",
         width: 20,
         height: 20,
       },
       {
-        src: "/images/socket-io.svg",
+        src: "images/socket-io.svg",
         alt: "socket-io",
         width: 20,
         height: 20,
@@ -256,7 +256,7 @@ export const portofolio: Portofolio[] = [
     media: [
       {
         type: "video",
-        src: "/videos/monitoring-bed.mp4",
+        src: "videos/monitoring-bed.mp4",
       },
     ],
   },
