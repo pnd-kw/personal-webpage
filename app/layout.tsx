@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const nunito = Nunito({ preload: false });
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-body",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-title",
+});
 
 export const metadata: Metadata = {
   title: "Personal Webpage | pnd-kw",
@@ -15,11 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${nunito.variable} ${inter.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={nunito.className}>{children}</body>
+      <body className="font-body">{children}</body>
     </html>
   );
 }

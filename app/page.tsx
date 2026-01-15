@@ -1,156 +1,121 @@
 import Button from "@/components/Button";
-import Card from "@/components/Card";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
+import Content from "@/components/contents/Content";
 
 export default function Home() {
-  const cardsData = [
-    {
-      id: 0,
-      title: "MONOTE APP",
-      image: "images/monote.svg",
-      description:
-        "This is a simple note-taking application project built using Flutter with Sqflite database and Riverpod State Management. It’s a personal project with the main goal of learning how to publish a mobile application on the Play Store.",
-
-      techLogo: ["images/flutter.svg"],
-      url: "https://play.google.com/store/apps/details?id=com.rga.note_app&hl=en&gl=US",
-    },
-    {
-      id: 1,
-      title: "SIMBOK-KU APP",
-      image: "images/simbok-ku.svg",
-      description:
-        "This is a tourism travel application development project initiated by a lecturer at a university in Semarang, Central Java. Central Java. It is being built using Flutter, GetX State Management, and Laravel as the backend service.",
-
-      techLogo: ["images/flutter.svg", "images/laravel.svg"],
-      url: "https://play.google.com/store/apps/details?id=com.simboku.trip_app&hl=en_US&gl=US",
-    },
-  ];
-
   return (
-    <div className="relative h-screen overflow-y-scroll">
+    <div className="relative min-h-screen flex flex-col">
       <Navbar />
       <div
         id="home"
-        className="w-full h-[90vh] flex justify-center overflow-hidden bg-slate-50"
+        className="relative flex flex-col w-full md:h-[90vh] flex justify-center overflow-hidden bg-gradient-to-t from-sky-50 via-sky-300 to-sky-800"
       >
-        <div className="w-full h-full flex flex-col items-center justify-center">
+        <div className="w-full h-full flex flex-col items-start justify-center pt-20">
           <div className="w-full md:w-2/3 flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center min-h-full">
-              <div className="flex items-center justify-center">
-                <Image
-                  className="object-cover w-[25vh] md:w-auto md:max-w-lg mx-auto"
-                  src="images/rocket.svg"
-                  alt="Landing page image"
-                  width={600}
-                  height={600}
-                />
+            <div className="md:grid md:grid-cols-2 gap-4 items-center min-h-full">
+              <div className="relative w-[300px] h-[300px] md:w-[420px] md:h-[450px]">
+                <div className="md:pl-7">
+                  <Image
+                    src="images/cloud.png"
+                    alt="cloud"
+                    width={500}
+                    height={500}
+                    className="absolute bottom-0 w-[100%] h-[130%] z-20 w-full pb-24"
+                  />
+                </div>
+                <div className="pl-10 md:pl-20 md:pt-2">
+                  <Image
+                    src="images/rocket-and-fire.png"
+                    alt="rocket"
+                    width={400}
+                    height={400}
+                    className="absolute bottom-0 z-10 w-[100%] animate-float"
+                  />
+                </div>
               </div>
+
               <div>
-                <div className="pb-12">
+                <div className="md:pb-4 pb-20">
                   <div className="flex items-center justify-center">
-                    <p className="font-bold text-xl md:text-3xl">
-                      &quot;
-                      <span className="font-bold text-xl md:text-3xl">
-                        Crafting Digital Experiences:
+                    <p className="text-slate-900 bg-white/80 backdrop-blur-sm rounded-full py-2 px-5 shadow-lg">
+                      <span className="font-bold text-lg md:text-2xl">
+                        Crafting Digital Experiences
                       </span>
                     </p>
                   </div>
-                  <div className="flex items-center justify-center">
-                    <p className="font-bold text-2xl md:text-4xl">
+                  <div className="flex items-center justify-center ">
+                    <p className="font-semibold text-lg md:text-2xl text-slate-100">
                       Your Go-To<span className="ml-2"></span>
-                      <span className="font-bold text-sky-700 text-2xl md:text-4xl">
-                        Flutter Developer&quot;
+                      <span className="font-extrabold text-xl text-sky-900 md:text-3xl drop-shadow-[0px_0px_2px_white]">
+                        Frontend Developer
                       </span>
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center justify-center pb-12">
-                  <div className="pr-8">
-                    <Link href="#works">
-                      <Button size="large" color="sky" textColor="text-white">
-                        WORKS
+
+                <div className="flex flex-col md:flex md:flex-row w-full gap-4 items-center">
+                  <Image
+                    src="/images/profile.png"
+                    alt="profile image"
+                    width={120}
+                    height={120}
+                    className="rounded-full"
+                  />
+                  <div className="flex flex-col space-y-2 items-center">
+                    <span className="bg-sky-600 rounded-full px-2 text-white font-semibold text-md md:text-xl">
+                      &quot; Try me, i don&apos;t bites&quot;
+                    </span>
+                    <a href="/resume/Resume-Krisna-Pandu-Wibowo.pdf" download>
+                      <Button
+                        size="large"
+                        color="white"
+                        textColor="text-sky"
+                        fontWeight="font-semibold"
+                      >
+                        <span className="flex items-center gap-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M12 4v12m0 0l-4-4m4 4l4-4"
+                            />
+                          </svg>
+                          <span>GET RESUME</span>{" "}
+                        </span>
                       </Button>
-                    </Link>
+                    </a>
+                    <span className="text-xs text-slate-500">
+                      PDF • Updated Jan 2026
+                    </span>
                   </div>
-                  <a
-                    href="https://drive.google.com/u/0/uc?id=1yeNp4PAl0efSLCs42W8hIoObdyDpAgA-&export=download"
-                    download="Resume-Krisna-Pandu.pdf"
-                  >
-                    <Button size="large" color="white" textColor="text-sky">
-                      RESUME
-                    </Button>
-                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="relative w-full mt-16 md:mt-0">
+          <Image
+            src="images/skyscrapper.png"
+            alt="city-skyline"
+            width={900}
+            height={300}
+            className="pointer-events-none w-full md:absolute md:bottom-[0px] md:right-0 md:w-[40%] max-w-[900px]"
+          />
+        </div>
+        <Footer />
       </div>
-      <div
-        id="about"
-        className="w-full h-full flex flex-col items-center justify-center pb-20"
-      >
-        <div className="pb-12">
-          <p className="font-bold text-4xl">ABOUT ME</p>
-        </div>
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center min-h-full">
-            <div className="flex items-center justify-center">
-              <Image
-                className="object-cover w-[25vh] md:w-auto md:max-w-lg mx-auto"
-                src="images/profile-photo.svg"
-                alt="profile image"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div>
-              <p>
-                Hello! My name is{" "}
-                <span className="font-bold text-sky-700">Krisna</span>, i&apos;m
-                a passionate Flutter Developer with a knack for crafting
-                captivating mobile applications. My journey in coding began with
-                a fascination for creating seamless user experiences. Proficient
-                in Dart and adept at leveraging Flutter&apos;s versatility, I
-                thrive on turning ideas into polished, functional, and
-                aesthetically pleasing apps. My focus lies in building scalable
-                solutions and embracing innovative approaches to ensure
-                delightful user interactions. Let&apos;s create something
-                remarkable together in the world of mobile development!
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="flex-1">
+        <Content />
       </div>
-      <div className="pb-12" />
-      <div
-        id="works"
-        className="w-full h-full flex flex-col items-center justify-center pb-20"
-      >
-        <div className="pb-12">
-          <p className="font-bold text-4xl">WORKS</p>
-        </div>
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div>
-            {cardsData.map((item) => (
-              <Card
-                key={item.id}
-                title={item.title}
-                image={item.image}
-                description={item.description}
-                techLogo={item.techLogo}
-                url={item.url}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="pb-12" />
-      <Footer />
     </div>
   );
 }
