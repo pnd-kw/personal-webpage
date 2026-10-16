@@ -12,7 +12,7 @@ export default function Home() {
         id="home"
         className="relative flex flex-col w-full md:h-[90vh] flex justify-center overflow-hidden bg-gradient-to-t from-sky-50 via-sky-300 to-sky-800"
       >
-        <div className="w-full h-full flex flex-col items-start justify-center pt-20">
+        <div className="w-full h-full flex flex-col items-start justify-center">
           <div className="w-full md:w-2/3 flex justify-center">
             <div className="md:grid md:grid-cols-2 gap-4 items-center min-h-full">
               <div className="relative w-[300px] h-[300px] md:w-[420px] md:h-[450px]">
@@ -45,9 +45,8 @@ export default function Home() {
                       </span>
                     </p>
                   </div>
-                  <div className="flex items-center justify-center ">
+                  <div className="flex w-full items-center justify-center">
                     <p className="font-semibold text-lg md:text-2xl text-slate-100">
-                      Your Go-To<span className="ml-2"></span>
                       <span className="font-extrabold text-xl text-sky-900 md:text-3xl drop-shadow-[0px_0px_2px_white]">
                         Frontend Developer
                       </span>
@@ -64,10 +63,7 @@ export default function Home() {
                     className="rounded-full"
                   />
                   <div className="flex flex-col space-y-2 items-center">
-                    <span className="bg-sky-600 rounded-full px-2 text-white font-semibold text-md md:text-xl">
-                      &quot; Try me, i don&apos;t bites&quot;
-                    </span>
-                    <a href="/resume/Resume-Krisna-Pandu-Wibowo.pdf" download>
+                    <a href="/resume/Resume-Krisna-Pandu-Wibowo-updated.pdf" download>
                       <Button
                         size="large"
                         color="white"
@@ -94,7 +90,7 @@ export default function Home() {
                       </Button>
                     </a>
                     <span className="text-xs text-slate-500">
-                      PDF • Updated Jan 2026
+                      PDF • Updated June 2026
                     </span>
                   </div>
                 </div>
