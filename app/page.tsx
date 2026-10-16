@@ -63,7 +63,7 @@ export default function Home() {
                     className="rounded-full"
                   />
                   <div className="flex flex-col space-y-2 items-center">
-                    <a href="/resume/Resume-Krisna-Pandu-Wibowo-updated.pdf" download>
+                    <a href="/resume/resume-krisna-pandu-wibowo-updated-jun-2026.pdf" download>
                       <Button
                         size="large"
                         color="white"
